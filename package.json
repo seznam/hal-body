@@ -1,0 +1,38 @@
+{
+  "name": "hal-body",
+  "version": "1.0.0",
+  "description": "Parse hal+json body using halson and co-body",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec --bail test.js"
+  },
+  "keywords": [
+    "request",
+    "body",
+    "parse",
+    "parser",
+    "co",
+    "generators",
+    "mediatype",
+    "HAL",
+    "JSON",
+    "REST",
+    "Hypermedia",
+    "HATEOAS",
+    "API"
+  ],
+  "author": "Seznam.cz, a.s.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seznam/hal-body"
+  },
+  "dependencies": {
+    "halson": "^1.0.5",
+    "co-body": "0.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^0.9.2",
+    "koa": "^0.5.1"
+  }
+}
