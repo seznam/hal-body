@@ -19,7 +19,8 @@ var parseHal = require('hal-body');
 
 // application/hal+json
 var resource = yield parseHal(req);
-console.log(resource.get('title'));
+console.log(resource.title));
+console.log(resource.getLink('self'));
 ```
 
 ## Koa
@@ -31,7 +32,8 @@ var parseHal = require('hal-body');
 
 // application/hal+json
 var resource = yield parseHal(this);
-console.log(resource.get('title'));
+console.log(resource.title);
+console.log(resource.getLink('self'));
 ```
 
 # License

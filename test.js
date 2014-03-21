@@ -9,9 +9,9 @@ describe('hal-body', function() {
         var app = koa();
         app.use(function*() {
             var res = yield parse(this);
-            assert.equal(res.className, hal.ParsedResource.prototype.className);
-            assert.equal(res.get('title'), 'Lorem Ipsum');
-            assert.equal(res.self('href'), '/lorem');
+            assert.equal(res.className, hal.Resource.prototype.className);
+            assert.equal(res.title, 'Lorem Ipsum');
+            assert.equal(res.getLink('self').href, '/lorem');
             this.body = "OK";
         });
 

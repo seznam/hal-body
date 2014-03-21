@@ -1,6 +1,6 @@
 {
   "name": "hal-body",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Parse hal+json body using halson and co-body",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "url": "https://github.com/seznam/hal-body"
   },
   "dependencies": {
-    "halson": "^1.0.5",
+    "halson": "^2.0.0",
     "co-body": "0.0.1"
   },
   "devDependencies": {
