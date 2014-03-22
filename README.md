@@ -1,4 +1,6 @@
 # hal-body
+[![Build Status](https://travis-ci.org/seznam/hal-body.svg?branch=master)](https://travis-ci.org/seznam/hal-body)
+
 Parse [hal+json](http://stateless.co/hal_specification.html) body using [halson](https://github.com/seznam/halson) and [co-body](https://github.com/visionmedia/co-body).
 
 ## Installation
