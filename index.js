@@ -5,5 +5,5 @@ module.exports = function(req, opts){
     return function*() {
         var json = yield parse.json(req, opts);
         return hal(json);
-    }
+    };
 };
