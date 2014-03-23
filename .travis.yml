@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "0.11"
+  - '0.11'
+deploy:
+  provider: npm
+  email: juraj@hajovsky.sk
+  api_key:
+    secure: 0LD+vRa0NuPwEm8lXIVGihneVx1+N1JaZATX5SR+QJfIf6gOQVouNIZRZEcfXWQA4Lyh5Drlk5ULfjg4L2Q8iqvOENpid8uw9IEC5wCp0v7jwmJ69kcXDdP5rnejOCXnM8ojefDfhElEd86AgXmBI3do1sxYBostMSE2Y+COBzE=
+  on:
+    tags: true
+    repo: seznam/hal-body
