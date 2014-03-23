@@ -1,6 +1,6 @@
 {
   "name": "hal-body",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Parse hal+json body using halson and co-body",
   "main": "index.js",
   "scripts": {
