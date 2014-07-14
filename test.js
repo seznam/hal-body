@@ -39,7 +39,7 @@ describe('hal-body', function() {
         });
     });
 
-    describe('with unsupperted content-type', function() {
+    describe('with unsupported content-type', function() {
         it('should fail with 415', function(done) {
             var app = koa();
 
