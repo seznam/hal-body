@@ -22,9 +22,9 @@ module.exports = function(req, opts) {
                 if (err) return done(err);
                 try {
                     done(null, hal(str));
-                } catch (err) {
-                    err.status = 400;
-                    err.body = str;
+                } catch (error) {
+                    error.status = 400;
+                    error.body = str;
                     done(err);
                 }
             });
