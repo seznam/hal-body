@@ -4,7 +4,7 @@
   "description": "Parse hal+json body using halson and co-body",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --harmony --reporter spec test.js"
+    "test": "NODE_ENV=test mocha --harmony --reporter spec test.js"
   },
   "keywords": [
     "request",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "halson": "^2.0.0",
-    "co-body": "0.0.1"
+    "raw-body": "~1.2.2"
   },
   "devDependencies": {
     "supertest": "^0.9.2",

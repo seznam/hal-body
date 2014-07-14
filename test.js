@@ -23,4 +23,35 @@ describe('hal-body', function() {
             .expect('OK')
             .end(done);
     });
+
+    describe('with missing content-type', function() {
+        it('should fail with 415', function(done) {
+            var app = koa();
+
+            app.use(function *() {
+                yield parse(this);
+            });
+
+            request(app.listen())
+                .post('/')
+                .send('{}')
+                .expect(415, 'Unsupported Media Type', done);
+        });
+    });
+
+    describe('with unsupperted content-type', function() {
+        it('should fail with 415', function(done) {
+            var app = koa();
+
+            app.use(function *() {
+                yield parse(this);
+            });
+
+            request(app.listen())
+                .post('/')
+                .set('Content-Type', 'application/json')
+                .send('{}')
+                .expect(415, 'Unsupported Media Type', done);
+        });
+    });
 });
